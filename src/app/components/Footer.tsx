@@ -8,7 +8,7 @@ const Footer = () => {
     <div className="md:flex bg-gray-900 gap-4 text-gray-400 p-10">
         <div className="md:w-1/4">
             <h1 className="text-xl text-white font-bold border-l-8 mb-5 pl-3 border-l-blue-600">About Us</h1>
-            <Image src={"/Logo.webp"} width={120} height={120} alt="mylogo"/>
+            <Image src={"/images/Logo.webp"} width={120} height={120} alt="mylogo"/>
             <p className="mt-5">The Future of the Web is Web 3.0, Metaverse, and Edge Computing. Panaverse DAO is a movement to spread</p>
         </div>
         <div className="md:w-1/4">

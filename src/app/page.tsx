@@ -1,29 +1,29 @@
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
+// import { Inter } from 'next/font/google'
 import styles from './page.module.css'
-import banner from '@/images/banner.jpg'
+// import banner from '@/images/banner.png'
 
-const inter = Inter({ subsets: ['latin'] })
+// const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
     <div>
       {/* BANNER SECTION */}
-      <div className="sm:flex sm:text-left text-center static justify-between items-center p-10 bg-[url('/bgbackground.png')] w-full bg-contain bg-fixed">
+      <div className="sm:flex sm:text-left text-center static justify-between items-center p-10 bg-[url('/images/bgbackground.png')] w-full bg-contain bg-fixed">
         <div className='sm:w-1/2 sm:mt-0 mt-10 text-white'>
           <h1 className='font-bold text-3xl md:text-6xl line leading-tight'>Build your next idea even faster</h1>
           <p className='text-lg my-4 text-justify md:mr-10'>One year Panaverse DAO Earn as you Learn Program. Consolidating Web 3.0, Metaverse, Artificial intelligence (AI), Cloud, Edge and Ambient Computing / IoT Technoligies</p>
           <button className='text-lg font-bold px-6 py-2 rounded-2xl bg-blue-600 hover:bg-blue-700'>More Info {">"}</button>
         </div>
         <div className='sm:w-1/2 sm:mt-0 mt-20'>
-          <Image src={"/banner.png"} width={600} height={600} alt='banner' />
+          <Image src={"/images/banner.png"} width={600} height={600} alt='banner' />
         </div>
       </div>
 
       {/* SECTION */}
       <div className='md:flex static md:gap-5 justify-center items-center m-10'>
         <div className='md:w-1/2'>
-          <Image className='mx-auto' src={"/illustraterimage.webp"} width={500} height={500} alt='web image' />
+          <Image className='mx-auto' src={"/images/illustraterimage.webp"} width={500} height={500} alt='web image' />
         </div>
         <div className='md:w-1/2'>
           <h1 className='border-l-blue-600 border-l-8 pl-4 font-bold font-serif text-3xl md:text-6xl line leading-tight'>Program Of Studies</h1>
@@ -39,7 +39,7 @@ export default function Home() {
         <div className='flex m-10 gap-x-5'>
           <div className='flex-1 shadow-xl transition-all duration-300 hover:scale-105'>
             {/* <div className='w-full h-20'> */}
-              <Image className='w-full bg-contain h-auto relative' width={150} height={350} src={"/web3_metaverse.webp"} alt={"Blockchain"} />
+              <Image className='w-full bg-contain h-auto relative' width={150} height={350} src={"/images/web3_metaverse.webp"} alt={"Blockchain"} />
 
             {/* </div> */}
             <h2 className='font-bold text-lg my-3 text-gray-700'>Web 3.0 (Blockchain) and Metaverse Specialization</h2>
@@ -48,7 +48,7 @@ export default function Home() {
           </div>
           <div className='flex-1 shadow-xl transition-all duration-300 hover:scale-105'>
             {/* <div className='w-full h-20'> */}
-              <Image className='w-full bg-contain h-auto relative' width={150} height={350} src={"/ai.webp"} alt={"Artificial Intelligence"} />
+              <Image className='w-full bg-contain h-auto relative' width={150} height={350} src={"/images/ai.webp"} alt={"Artificial Intelligence"} />
 
             {/* </div> */}
             <h2 className='font-bold text-lg my-3 text-gray-700'>Artificial Intelligence (AI)</h2>
@@ -57,7 +57,7 @@ export default function Home() {
           </div>
           <div className='flex-1 shadow-xl transition-all duration-300 hover:scale-105'>
             {/* <div className='w-full h-20'> */}
-              <Image className='w-full bg-contain h-auto relative' width={150} height={350} src={"/cnc.webp"} alt={"Cloud-Native Computing"} />
+              <Image className='w-full bg-contain h-auto relative' width={150} height={350} src={"/images/cnc.webp"} alt={"Cloud-Native Computing"} />
 
             {/* </div> */}
             <h2 className='font-bold text-lg my-3 text-gray-700'>Cloud-Native Computing Specialization</h2>
@@ -66,7 +66,7 @@ export default function Home() {
           </div>
           <div className='flex-1 shadow-xl transition-all duration-300 hover:scale-105'>
             {/* <div className='w-full h-20'> */}
-              <Image className='w-full bg-contain h-auto relative' width={150} height={350} src={"/iot.webp"} alt={"IOT"} />
+              <Image className='w-full bg-contain h-auto relative' width={150} height={350} src={"/images/iot.webp"} alt={"IOT"} />
 
             {/* </div> */}
             <h2 className='font-bold text-lg my-3 text-gray-700'>Ambient Computing and IoT Specialization</h2>
@@ -80,7 +80,7 @@ export default function Home() {
           <div className='flex justify-center items-center flex-wrap w-[80%] mx-auto'>
             <div className='w-full mt-5 sm:mt-0 sm:w-1/2 md:w-1/4'>
               <div>
-                <Image className='rounded-full border-2 mx-auto text-center' src={"/ZiaKhan.webp"} width={150} height={150} alt='Zia' />
+                <Image className='rounded-full border-2 mx-auto text-center' src={"/images/ZiaKhan.webp"} width={150} height={150} alt='Zia' />
                 <div>
                   <h1 className='font-bold text-xl my-3 text-black'>Zia Khan</h1>
                   <h2 className='font-bold text-lg my-3 text-gray-700'>CEO Panacloud</h2>
@@ -93,7 +93,7 @@ export default function Home() {
 
             <div className='w-full mt-5 sm:mt-0 sm:w-1/2 md:w-1/4'>
               <div>
-                <Image className='rounded-full border-2 mx-auto text-center' src={"/Daniyal.webp"} width={150} height={150} alt='Zia' />
+                <Image className='rounded-full border-2 mx-auto text-center' src={"/images/Daniyal.webp"} width={150} height={150} alt='Zia' />
                 <div>
                   <h1 className='font-bold text-xl my-3 text-black'>Daniyal Nagori</h1>
                   <h2 className='font-bold text-lg my-3 text-gray-700'>Software Development Lead</h2>
@@ -106,7 +106,7 @@ export default function Home() {
 
             <div className='w-full mt-5 sm:mt-0 sm:w-1/2 md:w-1/4'>
               <div>
-                <Image className='rounded-full border-2 mx-auto text-center' src={"/adil.webp"} width={150} height={150} alt='Zia' />
+                <Image className='rounded-full border-2 mx-auto text-center' src={"/images/adil.webp"} width={150} height={150} alt='Zia' />
                 <div>
                   <h1 className='font-bold text-xl my-3 text-black'>Adil Altaf</h1>
                   <h2 className='font-bold text-lg my-3 text-gray-700'>Adil Altaf</h2>
@@ -119,7 +119,7 @@ export default function Home() {
 
             <div className='w-full mt-5 sm:mt-0 sm:w-1/2 md:w-1/4'>
               <div>
-                <Image className='rounded-full border-2 mx-auto text-center' src={"/HiraKhan.webp"} width={150} height={150} alt='Zia' />
+                <Image className='rounded-full border-2 mx-auto text-center' src={"/images/HiraKhan.webp"} width={150} height={150} alt='Zia' />
                 <div>
                   <h1 className='font-bold text-xl my-3 text-black'>Hira Khan</h1>
                   <h2 className='font-bold text-lg my-3 text-gray-700'>Director at the Women Empowerment.</h2>

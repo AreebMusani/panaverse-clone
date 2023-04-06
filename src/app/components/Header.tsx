@@ -7,7 +7,7 @@ import { BiAlignRight } from "react-icons/bi";
 const Header = () => {
   return (
     <div className="flex justify-between px-10 items-center bg-slate-700">
-        <Image src={"/Logo.webp"} width={150} height={150} alt={"web Logo"} />
+        <Image src={"/images/Logo.webp"} width={150} height={150} alt={"web Logo"} />
         <ul className="sm:flex hidden text-white items-center space-x-4 md:space-x-10">
             <li className="text-lg"><Link className="hover:text-blue-700" href="#">Home</Link></li>
             <li className="text-lg"><Link className="hover:text-blue-700" href="#">Explore</Link></li>
