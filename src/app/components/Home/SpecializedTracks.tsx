@@ -3,10 +3,10 @@ import React from "react";
 
 const SpecializedTracks = () => {
     type TypeOfCourses = {
-        id: Number,
-        img: String,
-        title: String,
-        desc: String,
+        id: number,
+        img: string,
+        title: string,
+        desc: string,
     }
     const courses: TypeOfCourses[] = [
         {
@@ -43,12 +43,11 @@ const SpecializedTracks = () => {
                 {courses.map((item: TypeOfCourses) => {
                     return (
                         <div key={item.id.toString()} className='flex flex-col shadow-xl transition-all duration-300 hover:scale-105'>
-                            <Image className='w-full bg-contain h-auto relative' width={150} height={350} src={"/images/ai.webp"} alt={"Artificial Intelligence"} />
+                            <Image className='w-full bg-contain h-auto relative' width={150} height={350} src={item.img} alt={item.title} />
 
-                            <h2 className='font-bold text-lg my-3 text-gray-700'>Artificial Intelligence (AI)</h2>
-                            <p className='flex-grow text-justify h-fr text-base px-3 text-gray-500 mb-3'>The AI and Deep Learning specialization focuses on building and deploying intelligent APIs using OpenAI models</p>
+                            <h2 className='font-bold text-lg my-3 text-gray-700'>{item.title}</h2>
+                            <p className='flex-grow text-justify h-fr text-base px-3 text-gray-500 mb-3'>{item.desc}</p>
                             <button className='self-center text-white text-lg font-bold shadow-lg mb-3 px-6 py-2 rounded-2xl bg-blue-600 hover:bg-blue-700'>Apply Now</button>
-
                         </div>
                     )
                 })}
